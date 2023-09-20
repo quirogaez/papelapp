@@ -98,7 +98,7 @@ img {
 }
 
 
-.cardButton{
+.product_btn{
     border-style: solid;
     padding: 15px 30%;
     border-color: var(--blue);
@@ -110,7 +110,7 @@ img {
     margin-bottom:20px;
     cursor: pointer;
 }
-.cardButton:hover {
+.product_btn:hover {
     background-color: var(--blue);
     color: var(--white2);
     transition: background-color 0.5s;
