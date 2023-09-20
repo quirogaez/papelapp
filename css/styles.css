@@ -101,7 +101,7 @@
 .cardImg{
     width: 300px;
     object-fit: cover;
-    margin-left: 15%;
+   /* margin-left: 15%;*/
 }
 
 .cardTitle{
