@@ -284,6 +284,7 @@ body {
     z-index: 3; /* Asegura que el modal esté en la parte superior */
     justify-content: center;
     align-items: center;
+    overflow: auto;
 }
 /* Contenedor de los items del carrito */
 .cart-content {
