@@ -131,6 +131,7 @@
     padding: 20px; 
     text-align: center; 
     margin-bottom: 50px;
+    border-radius: 20px;
   }
   
 .cardButton {
@@ -212,4 +213,28 @@ a{
     color: var(--white);
     font-weight: 500;
     margin-top: 200px;
+}
+
+/*blogs*/
+
+.blogs{
+    background-color: var(--white2);
+}
+
+.blog-title{
+    font-size: 48px;
+    text-align: center;
+    margin: 90px;
+}
+
+.blog-img{
+    border-radius: 10px;
+    align-items: center;
+    margin: 0px 35%;
+}
+.blog-text{
+    padding: 50px 500px;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 30px;
 }
