@@ -1,3 +1,19 @@
+/* const datos = require('./products.js'); */
+
+import { products } from "./products.js";
+
+console.log(products);
+
+
+let itemsCart = JSON.parse(localStorage.getItem("itemsCart"))
+                ??
+                {}
+
+addEventListener("DOMContentLoaded", (event) => {
+
+});
+
+
 const carroBtn = document.getElementById('carro');  
 
 
@@ -12,5 +28,15 @@ carroBtn.addEventListener('click', function () {
     closeCartBtn.addEventListener('click', function () {
         cartModal.style.display = 'none';
     });
+
 });
 
+
+function addProduct() {
+    const 
+
+}
+
+/* module.exports = datos; //Especificar valroes del objeto */
+
+/*  localStorage.setItem("categorias", JSON.stringify(categorias)); */
