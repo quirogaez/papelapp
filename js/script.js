@@ -43,7 +43,7 @@ function addProduct() {
     if (keysProductsCart.includes(nameProduct)) {
         /* Se define la propeidad cantidad */
         let cantidad = itemsCart[nameProduct].cantidad ?? 0;
-        let valor = parseFloat(products[nameProduct].precio)
+        let valor = parseFloat(products[nameProduct].valor)
         
 
         /* Se establece nueva cantidad */
@@ -60,7 +60,7 @@ function addProduct() {
 
     }
     else {
-        let valor = parseFloat(products[nameProduct].precio)
+        let valor = parseFloat(products[nameProduct].valor)
         let cantidad = 1;
         /* S */
         itemsCart[nameProduct] = {};
@@ -89,9 +89,11 @@ function showCartItems(){
         <td>
             <!-- titulo y descripción-->
             <tr>
-                <h3>${products[productItem].descripcion}</h3>
-                <p>Cantidad: ${itemsCart[productItem].valor}</p>
-                <p>Precio: ${products[productItem].precio}</p>
+                <h3>${products[productItem].titulo}</h3>
+                <p>${products[productItem].descripcion}</p>
+                <p>Cantidad: ${itemsCart[productItem].cantidad}</p>
+                <p>Valor: ${products[productItem].valor}</p>
+                <p>Valor total: ${itemsCart[productItem].valor}</p>
             </tr>
         </td>`
         /* html += `<img src="${products[productItem].img}" alt="">
