@@ -1,0 +1,268 @@
+:root{
+    --white: #fff;
+    --white2: #F0F8F5;
+    --lightblue: #6DD7FA;
+    --blue: #1D97F5;
+    --darkblue:#1E4575;
+    --black: #000;
+}
+
+/* Resetear estilos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes */
+body {
+    font-family: 'TT Rationalist Trl', sans-serif;
+}
+
+/* Colores */
+body {
+    background-color: #F0F8F5;
+    color: #000000;
+}
+
+/* Contenedor de header */
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrar div */
+    /* Esta propiedad se encaerga de ocultar los elementos, todos los elementos que tengan clase container se va a ocultar
+    OVERFLOW, es si sobresale, todo lo que sobresalga se esconde con el hidden*/
+    overflow: hidden;
+    padding: 0;
+    height: auto;
+}
+
+.header {
+    background-color: #353333;
+    color: #FFFFFF;
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 1;
+
+}
+
+.header-contain {
+    height: 100vh;
+    background: rgb(240,251,245);
+    background: linear-gradient(90deg, rgba(240,251,245,1) 46%, rgba(29,151,245,1) 100%);
+    /* background: rgb(240,251,245);
+    background: linear-gradient(45deg, rgba(240,251,245,1) 46%, rgba(29,151,245,1) 100%); */
+    
+}
+/* Contenedor de lso items de la barra de navegacion */
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaciado enre las palabras, servicios, etc */
+    height: inherit; /* El contenido anterior de la aultura se hereda */
+    padding: inherit;
+
+}
+/* Etiquetas link "a" de la barra de navegaion */
+.links {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    overflow: auto;
+}
+/* Items li */
+.link-item {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* .link-item:last-child {
+    margin-right: 0;
+}
+ */
+
+ /* Contenido de la imagen del logo y el logo */
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+/* Se define la altura y ancho de la imagen */
+.logo-img {
+    width: 100px; /* Cambia el valor a la anchura deseada */
+    height: 80px; /* Mantener la proporción de aspecto original */
+}
+/* Se parametriza el texto del logo */
+.logo-texto {
+    font-size: 3rem;
+    color: #f0f9f5;
+}
+/* Cambio de color del texto */
+.logo-texto-modifier {
+    color: #6dd7fa;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Boton */
+.nav-link--btn {
+    color: #f0f9f5;
+    transition: color 0.3s ease;
+    background-color: none;
+    background: transparent; /* Fondo transparente */
+    border: none; /* Elimina el borde */
+    text-decoration: none; /* Elimina cualquier decoración de texto (por ejemplo, subrayado) */
+    cursor: pointer;
+    height: 30px;
+
+}
+
+.nav-link:hover {
+    color: #6DD7FA;
+}
+
+.shopping-cart {
+    position: relative;
+}
+
+.num-items {
+    padding: 0;
+    margin: 0;
+    background-color: #6DD7FA;
+    color: #f0f9f5;
+    border-radius: 50%;
+    width: 35%;
+    height: 35%;
+    font-size: 8px;
+    position: absolute;
+    right: -10%;
+}
+/* Estilos para el icono de carrito de compras */
+#carro {
+
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Estilos desplegable del carro */
+
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    z-index: 3; /* Asegura que el modal esté en la parte superior */
+    justify-content: center;
+    align-items: center;
+}
+/* Contenedor de los items del carrito */
+.cart-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Boton de cierre de la lista del carrito */
+#cardButton-close {
+/*     background-color: #ff0000;
+    color: #f0f9f5;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; */
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--blue);
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--darkblue);
+    background-color: var(--white1);
+}
+
+#cardButton-close:hover {
+    background-color: var(--blue);
+    color: var(--white2);
+    transition: background-color 0.5s;
+}
+
+/* BOTON CONJUNTO */
+.cardButton{
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--blue);
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--darkblue);
+    background-color: var(--white1);
+
+}
+.cardButton:hover {
+    background-color: var(--blue);
+    color: var(--white2);
+    transition: background-color 0.5s;
+}
+
+
+/* Inicio */
+.hero__main{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px auto;
+    
+}
+
+.hero__text{
+    max-height: 800px;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 56px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.title--active {
+    color: #6DD7FA;
+    font-weight: 400;
+}
+
+.mockup{
+    object-fit: cover;
+    width: 48%;
+    min-height: 700px; 
+    animation: zoom 10s infinite;
+    }
+  
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
