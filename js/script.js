@@ -156,7 +156,7 @@ function showTotalValue() {
         totalValue +=  itemsCart[product].valor;
     }
     /* Se agrega al valor total con formato español */
-    totalValueDom.textContent = formatNumber(totalValue);
+    totalValueDom.textContent = "$" + formatNumber(totalValue);
     return
 }
 
