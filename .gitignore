@@ -7,3 +7,4 @@
 # Ignorar archivos estáticos
 /static/
 /assets/
+/img/
