@@ -46,7 +46,7 @@ export const products = {
       descripcion: "Papel bond de alta blancura. Fabricado con tecnología alcalina de 75 gramos.",
       valor: "23900",
       img: "img/img_p08.jpeg",
-      titulo: ">RESMA DE PAPEL FOTOCOPIA CARTA PREMIUM DE 75 G, 500 HOJAS"
+      titulo: "RESMA DE PAPEL FOTOCOPIA CARTA PREMIUM DE 75 G, 500 HOJAS"
     },
     product9: {
       descripcion: "• 4 unidades • Color dorado • Tamaño aprox.: 32 mm c/u",

@@ -85,6 +85,7 @@ img {
     transition-property: background-color;
     transition-duration: .3s;
     height: 400px;
+    overflow: hidden;
 }
 .product__link:hover {
     background-color: var(--darkblue);
