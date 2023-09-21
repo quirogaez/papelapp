@@ -299,6 +299,25 @@ body {
     transition: background-color 0.5s;
 }
 
+.cart-button{
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--blue);
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--darkblue);
+    background-color: var(--white1);
+    padding: 10px 30px;
+    font-size: 16px;
+    margin: 15px;
+}
+
+.cart-button:hover{
+    background-color: var(--blue);
+    color: var(--white2);
+    transition: background-color 0.5s;
+}
+
 /* BOTON CONJUNTO */
 .cardButton{
     border-style: solid;
@@ -638,6 +657,7 @@ a{
     color: var(--white);
     font-weight: 500;
     margin-top: 200px;
+    margin-right: 20px;
 }
 
 /*blogs*/
