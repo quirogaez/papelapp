@@ -577,15 +577,25 @@ body {
     background-color: var(--darkblue
     );
     display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
 }
 .footerLogo{
     display: flex;
     margin: 50px;
+    padding-left: 20px;
  }
 .footerImg{
     width: 150px;
-    object-fit: fill;
+    object-fit: contain;
     height: 150px;
+ }
+
+ .footerInfo{
+    display: flex;
+    justify-content: center;
  }
 .footerTitle{
     margin-top: 20%;
@@ -597,30 +607,26 @@ body {
     color: var(--blue);
  }
 .contact{
-    display: block;
-    color: var(--white2); 
-    margin-left: 00px;
-    margin-top: 100px;
-    margin-left: 300px;
-    margin-right: 400px;
+    display: flex;
+    flex-direction: column;
+    color: var(--white2);
+    margin-right: 20px;
     text-decoration: none;
 }
 
 .contactTitle{
-    padding-left: 40px;
     font-size: 28px;
+    margin: 10px 0;
 }
 
 .contactList{
-    display: flex;
-    text-decoration: none;
-    font-size: 16px;
+    list-style: none;
+    padding: 0;
 
 }
 li{
-    list-style: none;
-    padding: 10px;
-
+    display: flex;
+    align-items: center;
 }
 a{
     text-decoration: none;

@@ -74,8 +74,7 @@ function addProduct() {
         console.log(itemsCart);
         plusProductsCart(1);
 
-    }
-    else {
+    } else {
         /* Si el prodcuto no se encuentra en el local storage, se asigna la propeidad con el nombre del producto
         y se asigna las propeidades de cantidad y valor a itemsCart */
         let valor = parseFloat(products[nameProduct].valor)
