@@ -1,0 +1,10 @@
+# Ignorar archivos de imágenes
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Ignorar archivos estáticos
+/static/
+/assets/
+/img/
