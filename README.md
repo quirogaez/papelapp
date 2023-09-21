@@ -2,6 +2,11 @@
 
 PapelApp es una aplicación de comercio electrónico de papelería que permite a los usuarios comprar productos de papelería de forma conveniente desde la comodidad de sus hogares u oficinas.
 
+## Integrantes
+- Juliana Ortiz
+- Valeria Rubio
+- Diego Quiroga
+
 ## Características Destacadas
 
 - Amplio catálogo de productos de papelería, desde útiles escolares hasta suministros de oficina.
